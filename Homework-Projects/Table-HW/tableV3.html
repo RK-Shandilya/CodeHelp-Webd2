@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    table,tr,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    caption{
+        caption-side: bottom;
+    }
+    .row1{
+        background-color: aqua;
+    }
+</style>
+
+<body>
+    <table>
+        <caption>Monthly savings</caption>
+        <colgroup>
+            <col span="1">
+            <col span="1" style="background-color: aqua;">
+            <!-- <col span="1" style="visibility: collapse;"> -->
+            <!-- <col span="1" style="background-color: aqua;"> -->
+        </colgroup>
+        <tr class="row1">
+            <td rowspan="2">State of Health</td>
+            <td colspan="2">Fasting Value</td>
+            <td>After Eating</td>
+        </tr>
+        <tr>
+            <td>Minimum</td>
+            <td>Maximum</td>
+            <td>2hours of Eating</td>
+        </tr>
+        <tr>
+            <td>Healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>less than 140</td>
+        </tr>
+        <tr>
+            <td>Pre-dia</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>
+        </tr>
+        <tr>
+            <td>Diabetes</td>
+            <td>More than 126</td>
+            <td>NA</td>
+            <td>More than 200</td>
+        </tr>
+    </table>
+</body>
+
+</html>
